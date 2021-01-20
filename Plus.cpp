@@ -6,7 +6,7 @@ Plus::Plus()
 {
 }
 
-void Plus::evaluate(vector<string> params, Context &context)
+void Plus::evaluate(const vector<string> &params, Context &context)
 {
 	if (params.size() != 0) {
 		throw TooManyArgumentsException();

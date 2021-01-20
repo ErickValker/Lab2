@@ -6,7 +6,7 @@ Division::Division()
 {
 }
 
-void Division::evaluate(vector<string> params, Context &context)
+void Division::evaluate(const vector<string> &params, Context &context)
 {
 	if (params.size() != 0) {
 		throw TooManyArgumentsException();

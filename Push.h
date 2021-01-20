@@ -5,7 +5,7 @@ class Push :
 {
 public:
 	Push();
-	void evaluate(vector<string>, Context &context);
+	void evaluate(const vector<string>&, Context &context);
 	~Push();
 };
 

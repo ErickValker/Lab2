@@ -6,7 +6,7 @@ Push::Push()
 {
 }
 
-void Push::evaluate(vector<string> params, Context &context)
+void Push::evaluate(const vector<string> &params, Context &context)
 {
 	if (params.size() > 1) {
 		throw TooManyArgumentsException();

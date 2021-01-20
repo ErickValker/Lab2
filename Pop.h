@@ -5,7 +5,7 @@ class Pop :
 {
 public:
 	Pop();
-	void evaluate(vector<string>, Context &context);
+	void evaluate(const vector<string>&, Context &context);
 	~Pop();
 };
 

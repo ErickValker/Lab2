@@ -13,9 +13,7 @@ Calculator::Calculator()
 {
 }
 
-void Calculator::calculate(istream &input)
-{
-	Context context;
+void Calculator::calculate(istream &input){
 	StreamReader reader(input);
 	Parser parser;
 	Factory& factory = Factory::Instance();

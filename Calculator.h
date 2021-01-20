@@ -1,14 +1,16 @@
 #pragma once
 #include <fstream>
+#include "context.h"
 
 using namespace std;
 
-class Calculator
-{
+class Calculator{
+private:
+    Context context;
 public:
 	Calculator();
 
-    static void calculate(istream&);
+    void calculate(istream&);
 
 	~Calculator();
 };

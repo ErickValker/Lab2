@@ -6,7 +6,7 @@ Pop::Pop()
 {
 }
 
-void Pop::evaluate(vector<string> params, Context &context)
+void Pop::evaluate(const vector<string> &params, Context &context)
 {
 	if (params.size() != 0) {
 		throw TooManyArgumentsException();

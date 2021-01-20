@@ -3,8 +3,9 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
+    Calculator calculator;
 	if (argc == 1) {
-		Calculator::calculate(cin);
+		calculator.calculate(cin);
 	}
 	else if ((argc == 2) && (argv[1][1] == 'h')) {
 		cout << "help instructions";
@@ -16,7 +17,7 @@ int main(int argc, char *argv[]) {
 			cout << "Can't open the input file.\n\n";
 			return 1;
 		}
-		Calculator::calculate(input);
+        calculator.calculate(input);
 	}
 	else if (argc > 3) {
 		cout << "help";

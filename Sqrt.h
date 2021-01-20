@@ -6,7 +6,7 @@ class Sqrt :
 {
 public:
 	Sqrt();
-	void evaluate(vector<string>, Context &context);
+	void evaluate(const vector<string>&, Context &context);
 	~Sqrt();
 };
 

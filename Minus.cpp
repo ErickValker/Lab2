@@ -5,7 +5,7 @@ Minus::Minus()
 {
 }
 
-void Minus::evaluate(vector<string> params, Context &context) 
+void Minus::evaluate(const vector<string> &params, Context &context)
 {
 	if (params.size() != 0) {
 		throw TooManyArgumentsException();

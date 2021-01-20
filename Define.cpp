@@ -4,7 +4,7 @@
 Define::Define() {
 }
 
-void Define::evaluate(vector<string> params, Context &context) {
+void Define::evaluate(const vector<string> &params, Context &context) {
     if (params.size() > 2) {
         throw TooManyArgumentsException();
     } else if (params.size() < 2) {

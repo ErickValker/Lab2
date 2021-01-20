@@ -6,7 +6,7 @@ Print::Print()
 {
 }
 
-void Print::evaluate(vector<string> params, Context &context)
+void Print::evaluate(const vector<string> &params, Context &context)
 {
 	if (params.size() != 0) {
 		throw TooManyArgumentsException();

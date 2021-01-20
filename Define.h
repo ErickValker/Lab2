@@ -6,7 +6,7 @@ class Define :
 {
 public:
 	Define();
-	void evaluate(vector<string>, Context &context);
+	void evaluate(const vector<string>&, Context &context);
 	~Define();
 };
 

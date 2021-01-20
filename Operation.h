@@ -15,6 +15,6 @@ class Operation
 {
 public:
 	Operation();
-	virtual void evaluate(vector<string>, Context &context) = 0;
+	virtual void evaluate(const vector<string>&, Context &context) = 0;
 	~Operation();
 };
