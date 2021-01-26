@@ -16,6 +16,7 @@ void Print::evaluate(const vector<string> &params, Context &context)
 	context.push_on_stack(value);
 }
 
+static OperationMaker<Print> maker("PRINT");
 
 Print::~Print()
 {

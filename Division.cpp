@@ -20,6 +20,7 @@ void Division::evaluate(const vector<string> &params, Context &context)
 	context.push_on_stack(result);
 }
 
+static OperationMaker<Division> maker("/");
 
 Division::~Division()
 {

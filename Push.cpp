@@ -28,6 +28,8 @@ void Push::evaluate(const vector<string> &params, Context &context)
 	}
 }
 
+static OperationMaker<Push> maker("PUSH");
+
 Push::~Push()
 {
 	std::cout << "operation push" << std::endl;

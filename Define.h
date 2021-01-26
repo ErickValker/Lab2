@@ -1,6 +1,7 @@
 #pragma once
 #include "Operation.h"
 #include <string>
+#include "OperationMaker.h"
 class Define :
 	public Operation
 {

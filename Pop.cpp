@@ -14,6 +14,7 @@ void Pop::evaluate(const vector<string> &params, Context &context)
 	context.pop_from_stack();
 }
 
+static OperationMaker<Pop> maker("POP");
 
 Pop::~Pop()
 {

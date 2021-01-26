@@ -12,10 +12,11 @@ void Minus::evaluate(const vector<string> &params, Context &context)
 	}
 	float first_val = context.pop_from_stack();
 	float second_val = context.pop_from_stack();
-	float result = second_val - first_val; //???
+	float result = second_val - first_val;
 	context.push_on_stack(result);
 }
 
+static OperationMaker<Minus> maker("-");
 
 Minus::~Minus()
 {

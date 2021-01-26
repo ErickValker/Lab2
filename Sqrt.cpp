@@ -1,7 +1,5 @@
 #include "Sqrt.h"
 
-
-
 Sqrt::Sqrt()
 {
 }
@@ -19,6 +17,7 @@ void Sqrt::evaluate(const vector<string> &params, Context &context)
 	context.push_on_stack(result);
 }
 
+static OperationMaker<Sqrt> maker("SQRT");
 
 Sqrt::~Sqrt()
 {

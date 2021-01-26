@@ -1,11 +1,8 @@
 #include "Plus.h"
 
-
-
 Plus::Plus()
 {
 }
-
 void Plus::evaluate(const vector<string> &params, Context &context)
 {
 	if (params.size() != 0) {
@@ -16,6 +13,9 @@ void Plus::evaluate(const vector<string> &params, Context &context)
 	float result = first_value + second_value;
 	context.push_on_stack(result);
 }
+
+
+static OperationMaker<Plus> maker("+");
 
 
 Plus::~Plus()

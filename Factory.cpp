@@ -4,8 +4,16 @@
 Factory::Factory() {
 }
 
+void Factory::register_operation_by_name(const std::string &key, IOperationMaker *maker) {
+    if (makers.find(key) != makers.end())
+    {
+        throw new std::exception();
+    }
+    makers[key] = maker;
+}
+
 Operation *Factory::get_operation_by_name(string operation_name) {
-    if (operation_name.compare("+") == 0) {
+    /*if (operation_name.compare("+") == 0) {
         return new Plus;
     } else if (operation_name.compare("-") == 0) {
         return new Minus;
@@ -25,7 +33,13 @@ Operation *Factory::get_operation_by_name(string operation_name) {
         return new Print;
     } else {
         throw WrongCommandNameException();
+    }*/
+    auto i = makers.find(operation_name);
+    if (i == makers.end()){
+        throw new std::exception();
     }
+    IOperationMaker* maker = i->second;
+    return maker->create();
 }
 
 

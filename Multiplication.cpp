@@ -17,6 +17,7 @@ void Multiplication::evaluate(const vector<string> &params, Context &context)
 	context.push_on_stack(result);
 }
 
+static OperationMaker<Multiplication> maker("*");
 
 Multiplication::~Multiplication()
 {

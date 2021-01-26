@@ -30,6 +30,7 @@ void Define::evaluate(const vector<string> &params, Context &context) {
     context.set_value_of_variable(variable, value);
 }
 
+static OperationMaker<Define> maker("DEFINE");
 
 Define::~Define() {
 }

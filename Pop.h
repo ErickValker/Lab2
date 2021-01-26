@@ -1,5 +1,6 @@
 #pragma once
 #include "Operation.h"
+#include "OperationMaker.h"
 class Pop :
 	public Operation
 {

@@ -1,5 +1,7 @@
 #pragma once
 
+#include "IOperationMaker.h"
+#include "OperationMaker.h"
 #include <iostream>
 #include <string>
 #include "Operation.h"
@@ -24,10 +26,15 @@ private:
     ~Factory();
 
 public:
+    std::map<std::string, IOperationMaker *> makers;
+
+    void register_operation_by_name(const std::string &key, IOperationMaker *maker);
+
     static Factory &Instance() {
         static Factory singleton;
         return singleton;
     };
+
 
     Operation *get_operation_by_name(string);
 };
